@@ -5,7 +5,7 @@
 /dev/video2               0660   system     camera
 /dev/s3c-jpg              0660   system     camera
 /dev/s3c-mem              0660   system     system
-/dev/s3c-mfc              0660   system     graphics
+/dev/s3c-mfc              0660   media      media
 
 # radio
 /dev/s3c2410_serial3      0660   radio      radio
@@ -23,4 +23,9 @@
 /dev/input/*              0660   root       input
 /sys/devices/virtual/input/input* enable 0660 root input
 /sys/devices/virtual/input/input* poll_delay 0660 root input
+
+# TV Out
+/dev/video14              0660   system     graphics
+/dev/video21              0660   system     graphics
+/dev/video22              0660   system     graphics
 
